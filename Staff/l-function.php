@@ -31,16 +31,16 @@ if (isset($_POST['login_btn'])) {
         }
     } else {
         $_SESSION['error_msg'] = "Invalid login credentials.";
-        header('location: login.php');
+        header('location: ../login.php');
         exit();
     }
 }
 
-function display_error() {
+function display_error()
+{
     if (isset($_SESSION['error_msg'])) {
         $error = $_SESSION['error_msg'];
         unset($_SESSION['error_msg']);
         return '<div class="error">' . $error . '</div>';
     }
 }
-?>
