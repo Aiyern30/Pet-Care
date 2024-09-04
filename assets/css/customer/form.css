@@ -1,0 +1,219 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #0072ff , #00c6ff);
+    padding: 10px;
+    overflow: hidden;
+}
+
+.container{
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 20px 80px 20px 80px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  border: 3px solid #1183ca;
+}
+
+.container .title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    color: #2196f3;
+}
+.container .title::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 20%;
+    background: blue;
+    left: 0;
+    bottom: -5px;
+    animation: move 10s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+.user-details .input-box .details{
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+    color: #555;
+}
+.user-details .input-box input,.user-details .input-box select{
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3 ease;
+    background-color: #f2f2f2;
+    padding-right: 15px;
+    
+}
+
+.user-details .input-box input:hover,.user-details .input-box select:hover{
+    box-shadow: 0px 0px 5px #0D58E1;
+}
+
+
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid,
+.user-details .input-box select:focus,
+.user-details .input-box select:valid{
+    border-color: #0D58E1;
+    box-shadow: 0px 0px 5px #0D58E1;
+}
+
+form .gender-details .gender-title{
+font-size: 20px;
+font-weight: 500;
+}
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 14px 0;
+}
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3 ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #00c6ff;
+}
+
+
+
+form input[type="radio"]{
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    background: #1183ca;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #00c6ff;
+
+}
+form .button input:hover{
+    background: #00c6ff;
+    box-shadow: 0px 0px 5px #1183ca;
+
+}
+
+.top-right-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 150px;
+    height: 40px;
+    background:  #1c8dd8;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 1px 1px 10px #0345be;
+
+  }
+  
+  .top-right-button option{
+    background-color: #1c8dd8;
+    text-align: center;
+  }
+  .top-right-button select:hover option{
+    background: #00c6ff;
+  }
+  
+
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    form .gender-details .category{
+        width: 100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y:scroll ;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+    .top-right-button{
+        /* top: 50px; */
+        top: auto;
+    }
+}
+.button {
+    margin: 0 auto;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  font-size: 20px;
+}
+
+
+  

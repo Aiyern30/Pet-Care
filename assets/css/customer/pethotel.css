@@ -1,0 +1,217 @@
+.header-pet{
+    width: 100%;
+    height: 400px;
+    background-color: #1AA7ec;
+    padding-top: 160px;
+}
+.header-pet h1{
+    font-size: 60px;
+    color: whitesmoke;
+    text-align: center;
+    
+}
+.title-pet{
+    padding: 20px;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+.title-pet h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.title-pet p{
+    line-height: 1.5;
+    text-align: justify;
+
+}
+.table-hotel {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.table-hotel th, .table-hotel td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.table-hotel th {
+background-color: #0052a3;
+color: white;
+}
+
+.table-hotel th:not(:last-child), .table-hotel td:not(:last-child) {
+border-right: 1px solid black;
+}
+
+.pet-btn-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.pet-btn{
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    font-size: 20px;
+}
+.pet-btn:hover{
+    background-color: aquamarine;
+    transform: scale(1.1);
+}
+.header-pet{
+    width: 100%;
+    height: 400px;
+    background-color: #1AA7ec;
+    padding-top: 160px;
+}
+.header-pet h1{
+    font-size: 60px;
+    color: whitesmoke;
+    text-align: center;
+    
+}
+
+/* Tableeee */
+
+
+
+.table-hotel {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+  }
+  
+  .table-hotel th, .table-hotel td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  .table-hotel th {
+    background-color: #0052a3;
+    color: white;
+  }
+  
+  .table-hotel th:not(:last-child), .table-hotel td:not(:last-child) {
+    border-right: 1px solid black;
+  }
+  
+  .table-hotel tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  .table-hotel th:hover{
+    background-color: #45b8fe;
+  }
+
+  .table-hotel td:hover {
+    background-color: #3cdfff;
+    cursor: pointer;
+  }
+
+.pet-btn-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.pet-btn{
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    font-size: 20px;
+}
+.pet-btn:hover{
+    background-color: aquamarine;
+    transform: scale(1.1);
+}
+@media screen and (max-width:700px) {
+    .table-hotel th, .table-hotel td {
+        font-size: 15px;
+        line-height: 1.0;
+      }
+      .pet-btn{
+        width: 100px;
+        height: 50px;
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+.hotel-con{
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+    background: white;
+}
+.hotel-con h1{
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+    font-size: 50px;
+}
+.hotel-con h1::after{
+    content: '';
+    background: #303ef7;
+    width: 200px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hotel-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 30px;
+}
+.hotel-description{
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+}
+.hotel-description i{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #0396d6;
+}
+.hotel-description h2{
+    font-weight: 600;
+    margin-bottom: 8px;
+    padding-top: 20px;
+}
+.hotel-description:hover{
+    background: #0396d6;
+    transform: scale(1.05);
+}
+.hotel-description:hover i{
+    color: white;
+}
+
+
+@media (max-width:1130px){
+    .hotel-con{
+        height: auto;
+    }
+}

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1E90FF;
+}
+nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background: #2a2f45;
+    left: 0;
+    overflow: hidden;
+    width: 90px;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.logo{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.logo i{
+    font-size: 40px;
+    color: white;
+
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 30px;
+}
+
+nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+    transition: all ease 0.5s;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+nav ul li i {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 12px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+nav ul li:not(:first-child) a:hover {
+    background: #eee;
+    color: black;
+    padding-left: 25px;
+  }
+  nav ul li:first-child a:hover {
+    background: #1f2336;
+    /* color: black; */
+  }
+
+  
+nav:hover{
+    width: 280px;
+    transition: all 0.5s;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+
+
+

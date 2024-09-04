@@ -1,0 +1,282 @@
+
+
+
+
+
+.pricewrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 30px; /* add margin-top to prevent overlap */
+    flex-wrap: wrap; /* allow the containers to wrap to a new row */
+
+}
+.price-container h3 {
+    position: relative;
+    display: inline-block;
+}
+.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+}
+
+.pricewrap .price-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 400px;
+    flex-basis: 100%;
+    height: 600px;
+    background-color: white;
+    padding: 30px;
+    margin: 0 15px 30px; /* add margin-bottom to prevent overlap */
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+    3px 3px 10px -1px rgba(255, 255, 255, 0.7);
+
+    transition: transform 0.3 ease-in-out;
+    border: 2px solid red;
+}
+
+.pricewrap .price-container h1{
+    margin-bottom: 10px;
+    color: black;
+    font-size: 2rem;
+}
+
+.pricewrap .price-container h1 span{
+    font-size: 14px;
+    color: black;
+}
+
+.pricewrap .price-container p{
+    margin: 20px 0; 
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.pricewrap .price-container ul{
+    list-style: none;
+}
+
+.pricewrap .price-container ul li{
+    line-height: 3;
+    color: black;
+}
+
+.pricewrap .price-container ul li i{
+    margin-right: 10px;
+    color: black;
+}
+
+.pricewrap .price-container a{
+    position: relative;
+    margin-top: auto;
+
+    bottom: 0;
+    left: 0;
+    margin: 20px 0;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    border: 1px solid #5f30e2;
+    padding: 15px;
+    font-weight: bold;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.pricewrap .price-container a:hover{
+    background-color: #5f30e2;
+    color: white;            
+}
+
+.price-container:hover{
+    background-color: #c4e3ff;
+    border: 2px solid #5f30e2;
+}
+@media only screen and (max-width: 1040px) {
+.pricewrap .price-container a {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+}
+.icon {
+    font-size: 1.5rem;
+    top: 20px;
+}
+}
+@media only screen and (max-width: 1040px) {
+    .pricewrap .price-container{
+        flex-basis: 100%;
+    }
+}
+
+
+.clinic-con{
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+    background: white;
+    }
+    .clinic-con h1{
+        text-align: center;
+        padding-top: 10%;
+        margin-bottom: 60px;
+        font-weight: 600;
+        position: relative;
+        font-size: 50px;
+    }
+    .clinic-con h1::after{
+        content: '';
+        background: #303ef7;
+        width: 300px;
+        height: 5px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .clinic-row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        grid-gap: 30px;
+    }
+    .clinic-des{
+        text-align: center;
+        padding: 25px 10px;
+        border-radius: 5px;
+        font-size: 17px;
+        cursor: pointer;
+        background: transparent;
+        transition: transform 0.5s, background 0.5s;
+    }
+    .clinic-des i{
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #0396d6;
+    }
+    .clinic-des h2{
+        font-weight: 600;
+        margin-bottom: 8px;
+        padding-top: 20px;
+    }
+    .clinic-des:hover h2{
+        color: white;
+    }
+    .clinic-des p{
+        line-height: 1.5;
+    }
+    .clinic-des:hover{
+        background: #0396d6;
+        transform: scale(1.05);
+    }
+    .clinic-des:hover i{
+        color: white;
+    }
+
+    .clinic-con a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    @media (max-width:1530px){
+        .clinic-con{
+            height: auto;
+        }
+        
+    }
+    @media (max-width:600px){
+        .clinic-row{
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    }
+        
+    }
+    .container-gallery{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2e9ff;
+            height: 100vh;
+            flex-wrap: wrap; /* allow the containers to wrap to a new row */
+
+        }
+        .container-gallery h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .gallery{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .img-box {
+            width: 200px;
+            height: 500px;
+            margin: 10px;
+            border-radius: 50px;
+            position: relative;
+            transition: width 0.5s;
+            overflow: hidden; /* to hide any overflow of the image */
+        }
+
+        .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img-box h3 {
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+            opacity: 0;
+            transition: bottom 0.5s, opacity 0.5s;
+        }
+
+        .img-box:hover {
+            width: 300px;
+            cursor: pointer;
+        }
+
+        .img-box:hover h3 {
+            opacity: 1;
+            bottom: 25px;
+        }
+        @media screen and (max-width: 910px) {
+            .img-box{
+                width: 150px;
+            }
+            .img-box:hover{
+                width: 200px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .container-gallery h1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                margin: 0;
+            }
+
+            .gallery {
+                margin-top: 100px;
+            }
+            .img-box{
+                width: 100px;
+                width: 100%;
+                margin: 10px 0;
+                }
+            .img-box h3 {
+                left: 0;
+            }
+        }
+        

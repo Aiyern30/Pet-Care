@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+
+.form-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-wrapper{
+    position: relative;
+    max-width: 750px;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    margin: 10px 20px;
+}
+.form-wrapper header{
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+
+}
+.form-wrapper .form{
+    margin-top: 30px;
+}
+.form .form-input-details{
+    width: 100%;
+    margin-top: 20px;
+}
+.form-input-details label{
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-input-details input{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    margin-top: 8px;
+    border: 1px solid #b3d7ff;
+    border-radius: 6px;
+    padding: 0 15px;
+    color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.604);
+
+}
+.form-input-details input:hover{
+    transform: scale(1.01);
+    transition: all 0.5s ease;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+    padding: 0 20px;
+
+}
+
+
+.form :where(.form-input-details input, .select-box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    margin-top: 8px;
+    border: 1px solid #b3d7ff;
+    border-radius: 6px;
+    padding: 0 15px;
+    color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.604);
+}
+
+.form-input-details input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+    border-color: #007bff;
+    outline: none;
+  }
+  
+.form-split {
+    display: flex;
+    column-gap: 15px;
+}
+.form-split .form-input-details {
+  width: 100%;
+}
+.gender-box{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.gender-box h3{
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.form :where(.gender-option,.gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+.form .gender{
+    column-gap: 5px;
+    
+}
+/* .gender input{
+    accent-color: rgb(120, 106,251);
+} */
+
+.gender input[type="radio"] {
+    display: none;
+    }
+
+    .gender label {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    color: #707070;
+
+    }
+
+    .gender input[type="radio"]:checked + label {
+    background-color: #1E90FF;
+    color: #fff;
+    }
+
+.form :where(.gender input, .gender label){
+    cursor: pointer;
+}
+
+.address:where(.input, .select-box){
+    margin-top: 15px;
+}
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 1rem;
+}
+.form-btn-details button{
+    height: 55px;
+    width: 100%;
+    color: white;
+    background-color:#1E90FF ;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
+
+}
+
+.form-btn-details button:hover {
+    background-color: #20B2AA;
+    transform: scaleX(1.01);
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:500px){
+    .form .form-split{
+        flex-wrap: wrap;
+    }
+    .form :where(.gender-option,.gender){
+        row-gap: 15px;
+    }
+}
+
+
+.btn-container{
+    height: 100px;
+    width: 100%;
+}
+.right-top-button{
+    float: right;
+    margin: 10px 10px 0px 0px;
+}
+.right-top-button button{
+    width: 200px;
+    height: 55px;
+    background-color: aquamarine;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.right-top-button button:hover{
+    background-color: antiquewhite;
+}    
+@media only screen and (max-width: 800px) {
+    
+    
+    .right-top-button button{
+        
+        width: 150px;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .btn-container{
+        height: 150px;
+        width: 100%;
+    }
+    .right-top-button button{
+        width: 100px;
+        height: 45px;
+        font-size: 13px;
+    }
+}
+   
+
+.View-Btn{
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #1E90FF;
+    color: white;
+    font-size: 16px;
+}
+.View-Btn:hover{
+    background-color: #009879;
+}
+
+.close-btn {
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #555;
+}
+
+
+.browse-button {
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid black;
+    background-color: lightgrey;
+}
+
+.petdata {
+    background-color: #f1f1f1;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .data-pet h3 {
+    margin: 0;
+  }
+  
+  .data-pet:first-child {
+    margin-right: 50px;
+  }
+  
+  

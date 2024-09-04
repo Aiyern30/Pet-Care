@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: red;
+    padding: 50px;
+    width: 100%;
+}
+.header h2{
+    text-align: center;
+}
+.pet-register{
+    width: 500px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+.input_register input{
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.input_register label{
+    color: #888;
+    font-size: 18px;
+    padding: 10px;
+}
+.input_label input{
+    padding: 10px;
+    border: 2px solid #ccc;
+    /* width: 95%; */
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.input_label label{
+    padding: 10px;
+    color: #888;
+    font-size: 18px;
+}
+.submit_btn{
+    float: center;
+    background-color: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+}
+.submit_btn:hover{
+    opacity: 7;
+}
+.error{
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+}

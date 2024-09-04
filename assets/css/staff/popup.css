@@ -1,0 +1,14 @@
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* red */
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .success{
+      padding: 20px;
+      background-color: green; 
+      color: white;
+      margin: 0 auto;
+      text-align: center;
+  }

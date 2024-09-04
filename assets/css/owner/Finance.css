@@ -1,0 +1,84 @@
+.chart-container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    gap: 2rem;
+    background-color: #f2f2f2;
+    padding: 2rem;
+    margin-top: 2rem;
+    height: 75vh;
+    border-radius: 20px;
+  }
+  
+  .chart {
+    padding: 1rem 2rem 5rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    background-color: #1E90FF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: 500px;
+    float: left;
+    width: 47%;
+    /* transform: scale3d(1.1); */
+    
+  }
+  
+  .chart:nth-child(even) {
+    float: right; 
+    width: 47%;
+  }
+  
+  .chart h1 {
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  .chart:hover {
+    border-color: #1E90FF;
+    background-color: rgba(30, 144, 255, 0.9);
+    border-color: black;
+    transform: scale(1.01);
+    transition: all 0.5s ease-in-out;
+  
+  }
+  
+  .chart:hover h1 {
+    color: black;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    
+    .chart-container{
+      height: auto;
+      padding: 20px;
+      margin: 0 20px;
+    }
+    .chart, .chart:nth-child(even) {
+      width: 100%; 
+      float: none; 
+      margin-top: 20px;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 600px) {
+    
+    .chart{
+      height: 400px;
+    }
+  }
+  .chart-container .chart canvas#barchart {
+    background-color: white;
+    border-radius: 15px;
+  }
+  
+  .chart-container .chart canvas#doughnut {
+    background-color: white;
+    border-radius: 15px;
+  }
+  
+  
